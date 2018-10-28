@@ -12,7 +12,7 @@ You can run Decca on our experimental subjects based on the following steps:
      
 >>     ├─decca-1.0.jar : 
      
->>     ├─pom.xml
+>>     ├─decca-1.0.pom
    
 >>     ├─soot-1.0.jar
     
@@ -36,7 +36,7 @@ You can run Decca on our experimental subjects based on the following steps:
 
 Execute the following Windows CMD command to analyze the project:
 
->>D:\plugin-decca\apache-maven-3.2.5\bin\mvn.bat -f=D:\RawData\Issue report dataset\Projects\hadoop-rel-release-3.0.0\hadoop-common-project\hadoop-minikdc\pom.xml -Dmaven.test.skip=true neu.lab:decca:1.0:printRiskLevel -DresultFilePath=D:\Report\ –e
+>>D:\plugin-decca\apache-maven-3.2.5\bin\mvn.bat -f=D:\RawData\Issue report dataset\Projects\hadoop-rel-release-3.0.0\hadoop-common-project\hadoop-minikdc\pom.xml -DresultFilePath=D:\Report\ -DsubdivisionLevel=false -Dmaven.test.skip=true neu.lab:decca:1.0:printRiskLevel –e
 
 Then you can get the dependency issue report in your specified directory (e.g., **D:\Report\**).
 
@@ -44,5 +44,7 @@ Then you can get the dependency issue report in your specified directory (e.g., 
 >>>>(1) -f=pom file : Specify the project under analysis;
 
 >>>>(2) -DresultFilePath=output issue report directory : Output the issue report to the specified folder;
+
+>>>>(2) -DsubdivisionLevel=subdivision level: default=false(1,3 level), true(1,2,3,4 level).
 
 
