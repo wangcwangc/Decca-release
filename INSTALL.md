@@ -25,7 +25,7 @@ You can run Decca on our experimental subjects based on the following steps:
 
 (a) Execute the following Windows CMD command to install soot:
 
->> D:\plugin-decca\apache-maven-3.2.5\bin\mvn.bat install:install-file  -Dfile=D:\plugin-decca\soot-1.0.jar  -DgroupId=neu.lab  -DartifactId=soot -Dversion=1.0 -Dpackaging=jar
+>> D:\plugin-decca\apache-maven-3.2.5\bin\mvn.bat install:install-file  -Dfile=D:\plugin-decca\soot-1.0.jar  -DgroupId=neu.lab  -DartifactId=soot -Dversion=1.0 -Dpackaging=jar -DpomFile=D:\plugin-decca\soot-1.0.pom
 
 (b) Execute the following Windows CMD command to install Decca:
 
