@@ -35,7 +35,7 @@ You can run Decca on our experimental subjects based on the following steps:
 
 Execute the following Windows CMD command to analyze the project:
 
->>D:\plugin-decca\apache-maven-3.2.5\bin\mvn.bat -f=D:\RawData\Issue report dataset\Projects\hadoop-rel-release-3.0.0\hadoop-common-project\hadoop-minikdc\pom.xml -DresultFilePath=D:\Report\ -DsubdivisionLevel=false -Dmaven.test.skip=true neu.lab:decca:1.0:printRiskLevel –e
+>>D:\plugin-decca\apache-maven-3.2.5\bin\mvn.bat -f=D:\RawData\Issue report dataset\Projects\hadoop-rel-release-3.0.0\hadoop-common-project\hadoop-minikdc\pom.xml -DresultPath=D:\Report\ -DsubdivisionLevel=false -Dmaven.test.skip=true neu.lab:decca:1.0:printRiskLevel -e
 
 Then you can get the dependency issue report in your specified directory (e.g., **D:\Report\**).
 
